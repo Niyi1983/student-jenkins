@@ -11,7 +11,7 @@ data "aws_ami" "latest-amazon-linux-image" {
   }
 }
 
-resource "aws_instance" "demo-server" {
+resource "aws_instance" "sandbox4-server" {
   ami                         = data.aws_ami.latest-amazon-linux-image.id
   instance_type               = var.instance_type
   key_name                    = var.instance_keypair
