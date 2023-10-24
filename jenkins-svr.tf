@@ -21,7 +21,7 @@ resource "aws_instance" "sandbox4-server" {
   associate_public_ip_address = true
   user_data                   = file("jenkins.sh")
   tags = {
-    Name = "student-jenkins-server"
+    Name = "niyi-jenkins-server"
   }
 
 }
