@@ -21,7 +21,7 @@ resource "aws_instance" "sandbox8-server" {
   associate_public_ip_address = true
   user_data                   = file("jenkins.sh")
   tags = {
-    Name = "sandbox8-jenkins-server"
+    Name = "sandbox9-jenkins-server"
   }
 
 }
