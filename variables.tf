@@ -20,7 +20,7 @@ variable "aws_region" {
 
 variable "env_prefix" {
   type = string
-  default = "sandbox8-jenkins"
+  default = "sandbox9-jenkins"
   
 }
 
