@@ -20,7 +20,7 @@ variable "aws_region" {
 
 variable "env_prefix" {
   type = string
-  default = "sandbox9-jenkins"
+  default = "niyijenkins-jenkins"
   
 }
 
@@ -32,5 +32,5 @@ variable "instance_type" {
 variable "instance_keypair" {
   description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
   type = string
-  default = "sandbox9" 
+  default = "Niyi_tutorKP" 
 }
