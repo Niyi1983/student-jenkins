@@ -11,7 +11,7 @@ data "aws_ami" "latest-amazon-linux-image" {
   }
 }
 
-resource "aws_instance" "sandbox9-server" {
+resource "aws_instance" "niyijenkins-server" {
   ami                         = data.aws_ami.latest-amazon-linux-image.id
   instance_type               = var.instance_type
   key_name                    = var.instance_keypair
@@ -21,7 +21,7 @@ resource "aws_instance" "sandbox9-server" {
   associate_public_ip_address = true
   user_data                   = file("jenkins.sh")
   tags = {
-    Name = "sandbox9-jenkins-server"
+    Name = "niyijenkins-server"
   }
 
 }
